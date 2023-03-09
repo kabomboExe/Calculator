@@ -3,8 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    background-color: rgb(58, 58, 58);
-}
+    background-color: rgb(97, 143, 155);}
 
 .menu_left {
     display: flex;

@@ -1,63 +1,74 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-    background-color: rgb(219, 72, 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background: rgb(241, 126, 99);
+  background: radial-gradient(
+    circle,
+    rgba(241, 126, 99, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
-.calculator{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(97, 143, 155);
-    width: 600px;
-    height: 500px;
-    outline: 2px solid white;
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(97, 143, 155);
+  width: 600px;
+  height: 500px;
+  outline: 2px solid white;
+  box-shadow: 18px 20px 52px 12px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 18px 20px 52px 12px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 18px 20px 52px 12px rgba(0, 0, 0, 0.28);
 }
-.calc_row{
-    flex: 1;
-    display: flex;
-}
-
-.result{
-    flex: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px;
-    background-color: rgb(185, 185, 185);
+.calc_row {
+  flex: 1;
+  display: flex;
 }
 
-.number, .function{
-    outline: 1px solid white;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    color: antiquewhite;
-    font-size: x-large;
-    font-weight: bold;
+.result {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(185, 185, 185);
 }
 
-.number:hover, .function:hover{
-    cursor: pointer;
-    transform: scale(1.03);
-    color: rgb(88, 88, 88);
+.number,
+.function {
+  outline: 1px solid white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  color: antiquewhite;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.number:hover{
-    background-color: antiquewhite;
+.number:hover,
+.function:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  color: rgb(88, 88, 88);
 }
 
-.function:hover{
-    background-color: rgb(159, 160, 95);
+.number:hover {
+  background-color: antiquewhite;
 }
 
-.delete, .zero{
-    flex: 2;
+.function:hover {
+  background-color: rgb(159, 160, 95);
 }
 
-.delete:hover{
-    background-color: rgb(160, 98, 98);
+.delete,
+.zero {
+  flex: 2;
+}
+
+.delete:hover {
+  background-color: rgb(160, 98, 98);
 }

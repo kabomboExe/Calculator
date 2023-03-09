@@ -22,7 +22,7 @@ const Home = () => {
     }
 
     const numberInputHandler = (input) => {
-        if (number.includes(".") && input === "." || number === "" && input === ".") {
+        if ((number.includes(".") && input === ".") || (number === "" && input === ".")) {
             setNumber(number);
         }else {
             setNumber(number + input);
